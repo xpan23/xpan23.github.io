@@ -33,9 +33,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body>
     <div class="sidenav text-center">
 		<div class="side_top">
-			<img src="images/about.jpg" alt="news image" class="img-fluid navimg">
-			<h1 class="top_hd mt-2"><a href="index.html">Conjoint</a></h1>
-			<p class="top_hdp mt-2">Fermentum lobortis non tristique ante proin sociis</p>
+			<img src="images/profile.jpg" alt="news image" class="img-fluid navimg">
+			<h1 class="top_hd mt-2"><a href="index.html">Xuxu Pan</a></h1>
+			<p class="top_hdp mt-2">Data Science masters student at University of San Francisco
+			</p>
         </div>
 		<!-- header -->
         <header>
@@ -44,11 +45,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <label for="drop" class="toggle">Menu</label>
                     <input type="checkbox" id="drop">
 						<ul class="menu">
-							<li class="active"><a href="#home" class="scroll">Home</a></li>
+							<li class="mt-sm-3"><a href="#projects" class="scroll">Projects</a></li>
 							 <li class="mt-sm-3"><a href="#about" class="scroll">About</a></li>
-							<li class="mt-sm-3"><a href="#services" class="scroll">Services</a></li>
-							<li class="mt-sm-3"><a href="#news" class="scroll">News</a></li>
-                            <li class="mt-sm-3"><a href="#contact" class="scroll">Contact</a></li>
+							<li class="mt-sm-3"><a href="#contact" class="scroll">Contact</a></li>
                         </ul>
 				</nav>
 			</div>
@@ -59,153 +58,89 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="banner-text-w3ls" id="home">
 			<div class="container">
                 <div class="mx-auto text-center">
-                    <h3>Nibh eleifend nulla nascetur pharetra
-				</h3>
-					<p class="banp mx-auto mt-3">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu  </p>
-					<a class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr" href="#about" role="button">Learn More</a>
+					<h3>Hi, I'm Xuxu Pan.</h3>
+					<br>
+					<h3>Welcome to my website! </h3>
+					<br>
+					<br>
+					<br>
+					<p class="banp mx-auto mt-3"></p>
+					<a class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr" href="#projects" role="button">Learn More</a>
                 </div>
             </div>
         </div>
-		<!-- about -->
+
+<!-- projects -->
+<div class="news" id="projects">
+	<h3 class="w3_head mb-4 text-left"> Projects</h3>
+	<p class="iner mt-md-5 text-left"> In my journey of Data Science, I threw down the gauntlet to every complex dataset I met. Here are some interesting ones I would like to share with you. </p>
+	<div class="row news-grids-left mt-5">
+		<div class="row news_top1">
+			<h5>Air Quality Index Prediction with Spark ML and H2O</h5>
+			<p class="mt-3">For this group project, we used <strong>Apache Spark</strong> on <strong>AWS EMR</strong> notebooks to build data processing ETL and distributed machine learning models.</p>
+			<p class="mt-3">Modeling on the 4GB Air Quality Index and Weather data, we managed to predict the AQI of LA county with a 13 MAE (300 based). The graph below shows how we got such a low MAE. </p>
+		</div>
+		<div class="row news_top">
+			<img src="images/AQI.png" alt="news image" class="img-fluid">
+		</div>
+	</div>
+	<div class="row news-grids-middle">
+		<div class="row news_top1">
+			<h5>California Housing Price Prediction</h5>
+			<p class="mt-3">We built <strong>SARIMA</strong>, <strong>SARIMAX</strong> and <strong>VAR</strong> models with <strong>Statsmodels</strong> and <strong>Pmdarima</strong> to predict the monthly median California housing price. Surprisingly, the winner is a simple SARIMA model, it achieved a RMSE of $2,511.58. </p>
+			<p class="mt-3">The graph below shows the difference of our predicted price and the actual price. It's tiny!
+		</div>
+		<div class="row news_top">
+			<img src="images/california_hp.png" alt="news image" class="img-fluid">
+		</div>
+	</div>
+	<div class="row news-grids-middle">
+		<div class="row news_top1">
+			<h5>PUBG Finish Placement Prediction</h5>
+			<p class="mt-3">Can we predict the finish placement of a PUBG game from the data in the game? Using the <strong> Scikit-learn Pipeline</strong> function, we can <strong>automate</strong> and combine the data preprocessing, model comparison and tuning into one workflow.</p>
+			<p class="mt-3">We also discussed the best strategy for the game by analysing <strong>permutation feature importance</strong> of the Random Forest model that achieved the best MedAE. Obviously, the best killer wins:)
+		</div>
+		<div class="row news_top">
+			<img src="images/PUBG.png" alt="news image" class="img-fluid">
+		</div>
+	</div>
+	<div class="row news-grids-right">
+
+		<div class="row news_top1">
+			<h5>Uber vs Lyft Pricing</h5>
+			<p class="mt-3">Which app should we open when we need to grab a cab, Uber or Lyft? To answer this question, I explored a real-time queried price dataset with <strong>Pandas</strong> and used <strong>ggplot2</strong> for visualization.</p>
+			<p class="mt-3">The most interesting finding was showed in the graph: Uber Pool is almost at the same price with a normal Lyft during rush hours, and Lyft Shared is much less expensive. So in rush hours, definitely go for Lyft Shared instead of Uber Pool.
+		</div>
+		<div class="row news_top">
+			<img src="images/EDA.png" alt="news image" class="img-fluid">
+		</div>
+	</div>
+</div>
+<!-- //projects -->
+<!-- about -->
 <section class="slide-wrapper" id="about">
 	<h2 class="w3_head mb-4">About Me </h2>
-	<h4 class="main_hd"> Fermentum lobortis non tristique ante proin sociis <br>accumsan lobortis auctor etiam.</h4>
-	<p class="iner mt-md-5"> Nunc fermentum adipiscing tempor cursus nascetur adipiscing adipiscing. Primis aliquam mus lacinia lobortis phasellus suscipit. Fermentum lobortis non tristique ante proin sociis accumsan lobortis. Auctor etiam porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum integer purus sapien. Nibh eleifend nulla nascetur pharetra commodo mi augue interdum tellus. Ornare cursus augue feugiat sodales velit lorem. Semper elementum ullamcorper lacinia natoque aenean scelerisque.</p>
+	<h4 class="main_hd"> I am currently a Data Science Intern at Propeller Health, using machine learning and NLP techniques to help with customer support team.</h4>
+	<p class="iner mt-md-5"> I worked as a Fund Accountant for 4 years in one of the largest mutual fund in China. I also passed all 3 level of Chartered Financial Analyst (CFA®) exams and will become a charter holder this year.</p>
+	<p class="iner mt-md-5"> I planed to pursue a career in Finance. However, after I built several important data pipelines from external data sources to the financial systems for my team, I became particularly interested in data and systems. So later I changed my plan and decided to go to San Francisco and study more about data. </p>
+	<p class="iner mt-md-5"> But it doesn't mean that I am leaving all my knowledge and experiences of Finance behind. On the contrary, I believe my background and experiences in Finance make me well equipped to tackle financial related data challenges.</p>
+	<p class="iner mt-md-5"> If you are also interested in combining data with finance, feel free to message me on LinkedIn:) </p>
 </section>
 <!-- //about -->
-<!-- services -->
-<section class="services" id="services">
-	<div class="container">
-		<h3 class="w3_head mb-4 text-left"> Services</h3>
-		<p class="iner mt-md-5 text-left"> Nunc fermentum adipiscing tempor cursus nascetur adipiscing adipiscing. Primis aliquam mus lacinia lobortis.Nunc fermentum adipiscing tempor cursus nascetur adipiscing adipiscing. </p>
-			<ul class="list-unstyled mt-5">
-				<li>
-					<div class="row">
-						<div class="col-2 ic-lft">
-							<span class="fa fa-code"></span>
-						</div>
-						<div class="col-10">
-							<h6>Fermentum adipiscing </h6>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="col-2 ic-lft">
-							<span class="fa fa-cubes"></span>
-						</div>
-						<div class="col-10">
-							<h6>Fermentum lobortis </h6>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="col-2 ic-lft">
-							<span class="fa fa-book"></span>
-						</div>
-						<div class="col-10">
-							<h6>Tristique ante </h6>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="col-2 ic-lft">
-							<span class="fa fa-coffee"></span>
-						</div>
-						<div class="col-10">
-							<h6>Nascetur adipiscing</h6>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="col-2 ic-lft">
-							<span class="fa fa-bolt"></span>
-						</div>
-						<div class="col-10">
-							<h6>Primis aliquam mus</h6>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="col-2 ic-lft">
-							<span class="fa fa-cog"></span>
-						</div>
-						<div class="col-10">
-							<h6>Lobortis phasellus</h6>
-						</div>
-					</div>
-				</li>
-			</ul>
-	</div>
+<!-- resume -->
+<section class="slide-wrapper" id="contact">
+	<h2 class="w3_head mb-4">Get in Touch </h2>
+	<p class="main_hd">
+		<a href="files/Xuxu_Pan_resume_ds.pdf">Resume</a></p>
+	<p class="main_hd">
+		<a href="mailto: x_pan0427@hotmail.com">x_pan0427@hotmail.com</a></p>
+	<p class="main_hd">
+		<a href="https://linkedin.com/in/xuxu-pan">LinkedIn</a></p>
+	<p class="main_hd">
+		<a href="https://github.com/xpan23">Github</a></p>
 </section>
-		<!-- //services -->
-		<!-- news -->
-       <div class="news" id="news">
-		<h3 class="w3_head mb-4 text-left"> News</h3>
-		<p class="iner mt-md-5 text-left"> Nunc fermentum adipiscing tempor cursus nascetur adipiscing adipiscing. Primis aliquam mus lacinia lobortis.Nunc fermentum adipiscing tempor cursus nascetur adipiscing adipiscing. </p>
-				<div class="row news-grids-left mt-5">
-					<div class="col-lg-5 news_top">
-						<img src="images/g1.jpg" alt="news image" class="img-fluid">
-					</div>
-					<div class="col-lg-7 news_top1">
-						<h5>Nulla pellentesque</h5>
-						<p class="mt-3">Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-					</div>
-				</div>
-				<div class="row news-grids-middle">
-					<div class="col-lg-5 news_top">
-						<img src="images/g2.jpg" alt="news image" class="img-fluid">
-					</div>
-					<div class="col-lg-7 news_top1">
-						<h5>Nulla pellentesque</h5>
-						<p class="mt-3">Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-					</div>
-				</div>
-				<div class="row news-grids-right">
-					<div class="col-lg-5 news_top">
-						<img src="images/g3.jpg" alt="news image" class="img-fluid">
-					</div>
-					<div class="col-lg-7 news_top1">
-						<h5>Nulla pellentesque</h5>
-						<p class="mt-3">Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-					</div>
-				</div>	
-				
-		</div>
-<!-- //news -->
-<!-- contact -->
-	 <section class="wedo" id="contact">
-	<h3 class="w3_head mb-4 text-left"> Contact Me</h3>
-	<p class="iner mt-md-5 text-left"> Nunc fermentum adipiscing tempor cursus nascetur adipiscing adipiscing. Primis aliquam mus lacinia lobortis.Nunc fermentum adipiscing tempor cursus nascetur adipiscing adipiscing. </p>
-		<div class="contact_grid_right mt-5 mx-auto text-left">
-				<form action="#" method="post">
-					<div class="row contact_top">
-						<div class="col-sm-6">
-							<input type="text" name="Name" placeholder="Name" required="">
-						</div>
-						<div class="col-sm-6">
-							<input type="email" name="Email" placeholder="Email" required="">
-						</div>
-					</div>	
-						<input type="text" name="Name" placeholder="Name" required="">
-						<textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
-						<button type="submit" class="btn">Send Message</button>
-						<button type="reset" class="btn">Reset</button>
-						<div class="clearfix"></div>
-				</form>
-			</div>
-			<div class="cpy-right text-center">
-				<p>© 2018 Conjoint. All rights reserved | Design by
-					<a href="http://w3layouts.com"> W3layouts.</a>
-				</p>
-			</div>
-	</section>
-	 <!-- //contact -->
-    </div>
+<!-- //resume -->
+</div>
    
 </body>
 </html>
